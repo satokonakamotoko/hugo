@@ -6,9 +6,11 @@ categories = ["Code Reading"]
 banner = "img/banners/banner-1.jpg"
 +++
 
-## 概要
+このブログは、Corda についてソースコードレベル（読んでいくソースコードは、release-M14.0 です）で理解することが目的です。まず起点として [Quickstart](https://docs.corda.net/releases/release-M14.0/quickstart-index.html) をやってみることにします。
 
-まずは、[Quickstart](https://docs.corda.net/releases/release-M14.0/getting-set-up.html#run-from-the-command-prompt)を読んでみる。ドキュメントに従うと、runnodesというスクリプトがあらわれる。その名のとおりCorDapp（Codraで動くアプリケーションをこう呼ぶらしい）のnodeを起動するためのスクリプトのようだ。まずはこのrunnodesを起点にしてCordaのしくみを理解してみることにする。MANIFEST.MFによると、mainクラスは、NodeRunnerKtのようである。Kotlinなので、ソースファイルはNodeRunner.ktである。たしかにmainメソッドがあった。
+<!--more-->
+
+ドキュメントを読み進めていくと、runnodes というスクリプトがあらわれます。このスクリプトは、その名のとおり CorDapp（Codra プラットフォームで動作するアプリケーションのことをこのように呼ぶようです）の node を起動するためのスクリプトです。まずはこの runnodes から順にソースコードを読み進めていき、Corda のしくみについて理解していきましょう。
 
 ## runnodes
 [runnodes](https://github.com/corda/corda/blob/release-M14.0/gradle-plugins/cordformation/src/main/resources/net/corda/plugins/runnodes)
