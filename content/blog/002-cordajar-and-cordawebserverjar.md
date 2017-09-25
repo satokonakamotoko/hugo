@@ -10,11 +10,11 @@ banner = "img/banners/banner-2.jpg"
 
 <!--more-->
 
-1つは、corda-webserver.jar もう1つは、corda.jar です。これら2つの jar ファイルは、Capsule というツールによってパッケージングされます。
+1つは、`corda-webserver.jar` もう1つは `corda.jar` です。これら2つの jar ファイルは、Capsule というツールによってパッケージングされます。Capsule によってパッケージングされた jar ファイルを実行すると、`applicationClass` に指定されたクラスが実行されます。
 
 ## build.gradle(corda-webserver.jar)
 [build.gradle](https://github.com/corda/corda/blob/release-M14.0/webserver/webcapsule/build.gradle)
-```$xslt
+```
 task buildWebserverJar(type: FatCapsule, dependsOn: project(':node').compileJava) {
     applicationClass 'net.corda.webserver.WebServer'
     archiveName "corda-webserver-${corda_release_version}.jar"
@@ -50,7 +50,7 @@ task buildWebserverJar(type: FatCapsule, dependsOn: project(':node').compileJava
 
 ## build.gradle(corda.jar)
 [build.gradle](https://github.com/corda/corda/blob/release-M14.0/node/capsule/build.gradle)
-```$xslt
+```
 task buildCordaJAR(type: FatCapsule, dependsOn: project(':node').compileJava) {
     applicationClass 'net.corda.node.Corda'
     archiveName "corda-${corda_release_version}.jar"
