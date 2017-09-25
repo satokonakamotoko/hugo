@@ -6,7 +6,7 @@ categories = ["Code Reading"]
 banner = "img/banners/banner-3.jpg"
 +++
 
-Capsule によってパッケージングされた2つの jar ファイル `corda-webserver.jar` と `corda.jar` 。
+Capsule によってパッケージングされた2つの jar ファイル corda-webserver.jar と corda.jar 。
 
 <!--more-->
 

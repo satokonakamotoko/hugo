@@ -2,11 +2,11 @@
 title = "AbstractNode 3"
 date = "2017-09-20T06:01:00+09:00"
 tags = ["Corda"]
-categories = ["Code Readking"]
+categories = ["Code Reading"]
 banner = "img/banners/banner-1.jpg"
 +++
 
-まだまだ `AbstractNode` の起動処理は続きます。
+まだまだ AbstractNode の起動処理は続きます。
 
 <!--more-->
 

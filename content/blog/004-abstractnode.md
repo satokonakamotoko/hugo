@@ -6,7 +6,7 @@ categories = ["Code Reading"]
 banner = "img/banners/banner-4.jpg"
 +++
 
-`NodeStartup` のなかで、`node.start()` が呼ばれていました。
+NodeStartup のなかで、node.start() が呼ばれていました。
 
 <!--more-->
 

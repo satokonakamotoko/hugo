@@ -6,7 +6,7 @@ categories = ["Code Reading"]
 banner = "img/banners/banner-5.jpg"
 +++
 
-引き続き `AbstractNode` に実装されている、ノードの起動処理について見ていきます。
+引き続き AbstractNode に実装されている、ノードの起動処理について見ていきます。
 
 <!--more-->
 
