@@ -10,7 +10,7 @@ banner = "img/banners/banner-5.jpg"
 
 <!--more-->
 
-ノードの起動処理のなかで、多数のサービスを順にセットアップしていくわけですが、それらサービスのなかでも重要なサービスである、メッセージングサービス（メッセージングサーバー）を起動します。Corda では、メッセージングサービスの実装として、Apache ActiveMQ Artemis を使用しています。
+ノードの起動処理のなかで、多数のサービスを順にセットアップしていくわけですが、それらサービスのなかでも重要なサービスである、メッセージングサービス（メッセージングサーバー）を起動しています。Corda では、メッセージングサービスの実装として、Apache ActiveMQ Artemis を使用しています。
 
 ## AbstractNode.kt
 [AbstractNode.kt](https://github.com/corda/corda/blob/release-M14.0/node/src/main/kotlin/net/corda/node/internal/AbstractNode.kt)
