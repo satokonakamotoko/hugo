@@ -10,7 +10,7 @@ banner = "img/banners/banner-1.jpg"
 
 <!--more-->
 
-ドキュメントを読み進めていくと、runnodes というスクリプトがあらわれます。このスクリプトは、その名のとおり CorDapp（Codra プラットフォームで動作するアプリケーションのことをこのように呼ぶようです）の node を起動するためのスクリプトです。まずはこの runnodes から順にソースコードを読み進めていき、Corda のしくみについて理解していきましょう。
+ドキュメントを読み進めていくと、`runnodes` というスクリプトがあらわれます。このスクリプトは、その名のとおり CorDapp（Codra プラットフォームで動作するアプリケーションのことをこのように呼ぶようです）の node を起動するためのスクリプトです。まずはこの `runnodes` から順にソースコードを読み進めていき、Corda のしくみについて理解していきましょう。
 
 ## runnodes
 [runnodes](https://github.com/corda/corda/blob/release-M14.0/gradle-plugins/cordformation/src/main/resources/net/corda/plugins/runnodes)
