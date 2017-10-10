@@ -13,7 +13,7 @@ Corda ノードの起動と同時に、[Shell](https://docs.corda.net/releases/r
 Shell には、Java のための shell である CRaSH に、パッチをあてたものが使われます。この Shell 関連のクラスのいくつかは、CRaSH の制限のため Kotlin ではなく、Java で書かれています。
 
 ## InteractiveShell.kt
-[InteractiveShell.kt](https://github.com/corda/corda/blob/release-M14.0/node/src/main/kotlin/net/corda/node/internal/AbstractNode.kt)
+[InteractiveShell.kt](https://github.com/corda/corda/blob/release-M14.0/node/src/main/kotlin/net/corda/node/shell/InteractiveShell.kt)
 ```
     fun startShell(dir: Path, runLocalShell: Boolean, runSSHServer: Boolean, node: Node) {
         this.node = node
