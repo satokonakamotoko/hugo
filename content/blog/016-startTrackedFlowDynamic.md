@@ -6,11 +6,11 @@ categories = ["Code Reading"]
 banner = "img/banners/banner-1.jpg"
 +++
 
-前回は、ExampleApi という REST API を提供するクラスを用意して、Node にアクセスする方法について見ていきました。
+ExampleApi クラスをつうじて REST API サービスを提供することができました。ここからは ExampleApi の各メソッドについて見ていきましょう。
 
 <!--more-->
 
-ただしこの方法を有効にするには、もうひとつ作業が必要になります。`WebServerPluginRegistry` を実装したプラグインクラスを用意し、Java の ServiceLoader の仕組みを使って REST API サービスを有効にします。
+まずは、`createIOU` です。（IOU とは `I Owe yoU` の略です）`services` オブジェクトの `startTrackedFlow` を呼び出していることがわかります。
 
 
 ## ExampleApi.kt
@@ -47,7 +47,7 @@ banner = "img/banners/banner-1.jpg"
 ```
 
 ## CordaRPCOpsImpl.kt
-[CordaRPCOpsImpl.kt]()
+[CordaRPCOpsImpl.kt](https://github.com/corda/corda/blob/release-M14.0/node/src/main/kotlin/net/corda/node/internal/CordaRPCOpsImpl.kt)
 ```
     override fun <T : Any> startTrackedFlowDynamic(logicType: Class<out FlowLogic<T>>, vararg args: Any?): FlowProgressHandle<T> {
         val stateMachine = startFlow(logicType, args)
@@ -60,7 +60,7 @@ banner = "img/banners/banner-1.jpg"
 ```
 
 ## AbstractNode.kt
-[AbstractNode.kt]()
+[AbstractNode.kt](https://github.com/corda/corda/blob/release-M14.0/node/src/main/kotlin/net/corda/node/internal/AbstractNode.kt)
 ```
         override fun <T> startFlow(logic: FlowLogic<T>, flowInitiator: FlowInitiator): FlowStateMachineImpl<T> {
             return serverThread.fetchFrom { smm.add(logic, flowInitiator) }
